@@ -1,0 +1,6 @@
+{
+    "admins": ["admin1", "admin2"],
+    "mods": ["mod1", "mod2"],
+    "players": ["player1", "player2"]
+  }
+  

@@ -1,0 +1,9 @@
+<settings>
+    <server>
+        <host>localhost</host>
+        <port>25565</port>
+    </server>
+    <log>
+        <level>INFO</level>
+    </log>
+</settings>

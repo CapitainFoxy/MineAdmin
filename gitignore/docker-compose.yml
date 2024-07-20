@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    image: maven:3.6.3-jdk-11
+    volumes:
+      - ./backend:/usr/src/app
+    working_dir: /usr/src/app
+    command: mvn spring-boot:run
+    ports:
+      - "8080:8080"
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: mineadmin_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
